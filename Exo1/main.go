@@ -17,8 +17,12 @@ var cpInput int
 var spInput int
 
 func main() {
+
+	fmt.Print("Nbre d'habitants : ")
 	fmt.Scanf("%d", &nbInput)
+	fmt.Print("Code postal : ")
 	fmt.Scanf("%d", &cpInput)
+	fmt.Print("Superficie : ")
 	fmt.Scanf("%d", &spInput)
 	villes = make(map[int]Ville)
 	villes[0] = Ville{nbInput, cpInput, spInput}
